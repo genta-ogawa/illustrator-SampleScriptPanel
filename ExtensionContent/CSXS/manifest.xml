@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+<!-- 以上、Eclipse のバグ対策：(存在しない build.xml のDTDが無いことを警告する問題の回避) 20180424 -->
+<ExtensionManifest Version="5.0" ExtensionBundleId="com.example.sampleScriptPanel" ExtensionBundleVersion="1.0.1"
+		ExtensionBundleName="sampleScriptPanel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ExtensionList>
+		<Extension Id="com.example.sampleScriptPanel" Version="1.0" />
+	</ExtensionList>
+	<ExecutionEnvironment>
+		<HostList>
+            <!-- Uncomment Host tags according to the apps you want your panel to support -->
+            <!-- Photoshop -->
+
+            <!--Host Name="PHXS" Version="[15.0,15.9]" />
+            <Host Name="PHSP" Version="[15.0,15.9]" /-->
+
+            <!-- Illustrator CC2017 CC2018 -->
+            <Host Name="ILST" Version="[21.1.0,22.1.0]"/>
+            <!-- InDesign -->
+            <!-- <Host Name="IDSN" Version="[10.0,10.9]" /> -->          
+            <!-- Premiere -->
+            <!-- <Host Name="PPRO" Version="[8.0,8.9]" /> -->
+            <!-- AfterEffects -->
+            <!-- <Host Name="AEFT" Version="[13.0,13.9]" /> -->
+            <!-- PRELUDE -->
+            <!-- <Host Name="PRLD" Version="[3.0,3.9]" />   -->
+            <!-- FLASH Pro -->
+            <!-- <Host Name="FLPR" Version="[14.0,14.9]" /> -->
+
+		</HostList>
+		<LocaleList>
+			<Locale Code="All" />
+		</LocaleList>
+		<RequiredRuntimeList>
+			<RequiredRuntime Name="CSXS" Version="5.0" />
+		</RequiredRuntimeList>
+	</ExecutionEnvironment>
+	<DispatchInfoList>
+		<Extension Id="com.example.sampleScriptPanel">
+			<DispatchInfo >
+				<Resources>
+				<MainPath>./html/index.html</MainPath>
+				<ScriptPath>./js/hostscript.jsx</ScriptPath>
+				</Resources>
+				<Lifecycle>
+					<AutoVisible>true</AutoVisible>
+				</Lifecycle>
+				<UI>
+					<Type>Panel</Type>
+					<Menu>ScriptPanel</Menu>
+					<Geometry>
+						<Size>
+							<Height>300</Height>
+							<Width>300</Width>
+						</Size>
+                    <!--<MinSize>
+                            <Height>550</Height>
+                            <Width>400</Width>
+                        </MinSize>
+                        <MaxSize>
+                            <Height>550</Height>
+                            <Width>400</Width>
+                        </MaxSize>-->
+                        
+					</Geometry>				
+				</UI>
+			</DispatchInfo>
+		</Extension>
+	</DispatchInfoList>
+</ExtensionManifest>
