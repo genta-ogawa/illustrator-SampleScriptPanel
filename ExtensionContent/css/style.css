@@ -1,0 +1,10 @@
+* {
+	font-size: 11px;
+}
+body {
+	margin: 0px;
+	background-color: #999999;
+}
+.none {
+	display: none;
+}

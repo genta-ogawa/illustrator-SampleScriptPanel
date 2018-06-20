@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration>
 <!-- 以上、Eclipse のバグ対策：(存在しない build.xml のDTDが無いことを警告する問題の回避) 20180424 -->
-<ExtensionManifest Version="5.0" ExtensionBundleId="com.example.sampleScriptPanel" ExtensionBundleVersion="1.0.1"
+<ExtensionManifest Version="5.0" ExtensionBundleId="com.example.sampleScriptPanel" ExtensionBundleVersion="1.0.2"
 		ExtensionBundleName="sampleScriptPanel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ExtensionList>
-		<Extension Id="com.example.sampleScriptPanel" Version="1.0" />
+		<Extension Id="com.example.sampleScriptPanel" Version="1.0.2" />
 	</ExtensionList>
 	<ExecutionEnvironment>
 		<HostList>
@@ -14,8 +14,8 @@
             <!--Host Name="PHXS" Version="[15.0,15.9]" />
             <Host Name="PHSP" Version="[15.0,15.9]" /-->
 
-            <!-- Illustrator CC2017 CC2018 -->
-            <Host Name="ILST" Version="[21.1.0,22.1.0]"/>
+            <!-- Arrow FileSystemSerch need "up to ILCC2014" Illustrator CC2014 - CC2018 -->
+            <Host Name="ILST" Version="[18.0,22.1.0]"/>
             <!-- InDesign -->
             <!-- <Host Name="IDSN" Version="[10.0,10.9]" /> -->          
             <!-- Premiere -->
@@ -47,21 +47,20 @@
 				</Lifecycle>
 				<UI>
 					<Type>Panel</Type>
-					<Menu>ScriptPanel</Menu>
+					<Menu>sampleScriptPanel</Menu>
 					<Geometry>
 						<Size>
 							<Height>300</Height>
 							<Width>300</Width>
 						</Size>
-                    <!--<MinSize>
-                            <Height>550</Height>
-                            <Width>400</Width>
+                    	<MinSize>
+                            <Height>300</Height>
+                            <Width>300</Width>
                         </MinSize>
                         <MaxSize>
                             <Height>550</Height>
                             <Width>400</Width>
-                        </MaxSize>-->
-                        
+                        </MaxSize>
 					</Geometry>				
 				</UI>
 			</DispatchInfo>
